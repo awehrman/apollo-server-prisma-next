@@ -1,0 +1,31 @@
+{
+  "name": "next-prisma-apollo-server-2-backend",
+  "version": "1.0.0",
+  "description": "A sample apollo server that utilizes prisma db utilites and next for server rendered pages.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "prisma deploy -e .env",
+    "dev": "NODE_ENV=development nodemon --exec babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandra Wehrman",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.4.8",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "graphql-import": "^0.7.1",
+    "nodemon": "^1.18.10",
+    "prisma-client-lib": "^1.29.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.2",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "prisma": "^1.29.1"
+  }
+}
